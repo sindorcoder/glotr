@@ -69,7 +69,7 @@ body {
   height: 20px;
 }
 .wrapper span {
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 500;
   font-family: "gilroy medium";
   color: #667085;
@@ -176,6 +176,7 @@ body {
 .action {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
 }
 .action button {
@@ -186,10 +187,12 @@ body {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  width: 100%;
 }
+
 .action_btn_product {
   background-color: #f24236;
-  padding: 14px 80px;
+  padding: 20px;
 }
 .action_btn_message {
   padding: 13px 20px;
@@ -356,7 +359,7 @@ body {
   display: grid;
   justify-content: center;
   flex-wrap: wrap;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
 .product-card {
@@ -403,7 +406,7 @@ body {
 }
 
 .product-title {
-  font-size: 24px;
+  font-size: 14px;
   color: #333;
   margin-bottom: 10px;
   font-weight: 500;
@@ -447,4 +450,45 @@ body {
 .city {
   font-size: 16px;
   color: #777;
+}
+.about_company {
+  overflow-x: auto;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about_company span {
+  padding: 8px 12px;
+  background-color: white;
+  font-size: 15px;
+  line-height: 100%;
+  font-weight: 500;
+  font-family: "gilroy medium";
+  color: #344054;
+  border-radius: 8px;
+  text-wrap: nowrap;
+}
+.about_company_items_one,
+.about_company_items_two {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media only screen and (min-width: 580px) {
+  .product-title {
+    font-size: 28px;
+  }
+  .product_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .action button {
+    width: auto;
+  }
+  .action_btn_product {
+    padding: 14px 80px;
+  }
 }
