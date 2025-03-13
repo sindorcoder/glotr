@@ -4,31 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glotr</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav>
-      <div class="container">
-        <div class="navbar">
-          <img
-            style="cursor: pointer"
-            src="./images/hamburger 1.svg"
-            alt="menu bars open"
-          />
-          <div class="search_bar">
+    <header class="header">
+      <nav>
+        <div class="container">
+          <div class="navbar">
             <img
-              class="search_bar_icon"
-              src="./images/Icon.svg"
-              alt="search product"
+              style="cursor: pointer"
+              src="./images/hamburger 1.svg"
+              alt="menu bars open"
             />
-            <input
-              class="search_bar_input"
-              type="text"
-              placeholder="Искать на Glotr"
-            />
+            <div class="search_bar">
+              <img
+                class="search_bar_icon"
+                src="./images/Icon.svg"
+                alt="search product"
+              />
+              <input
+                class="search_bar_input"
+                type="text"
+                placeholder="Искать на Glotr"
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="wrapper">
+          <span> Главная </span>
+          <img src="./images/arrow.svg" alt="arrow" />
+          <span> Товары </span>
+          <img src="./images/arrow.svg" alt="arrow" />
+          <span> Красота и здоровье </span>
+        </div>
+        <div class="sub_category">
+          <ul class="sub_category_list">
+            <li class="sub_category_item">
+              <a href="#">Описание</a>
+            </li>
+            <li class="sub_category_item">
+              <a href="#">Характеристики</a>
+            </li>
+            <li class="sub_category_item">
+              <a href="#">Продавец</a>
+            </li>
+            <li class="sub_category_item">
+              <a href="#">Отзывы</a>
+            </li>
+          </ul>
+        </div>
+      <div />
+    </header>
+    <main>
+      <div class="container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/macbook.png" alt="macbook air m1 photos" />
+              <span class="heart">
+                <img src="./images/heart.svg" alt="heart" />
+              </span>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/macbook.png" alt="macbook air m1 photos" />
+              <span class="heart">
+                <img src="./images/heart.svg" alt="heart" />
+              </span>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/macbook.png" alt="macbook air m1 photos" />
+              <span class="heart">
+                <img src="./images/heart.svg" alt="heart" />
+              </span>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="content_product">
+          <h2>Apple Macbook air, M1, 512 SSD gb, 32gb RAM</h2>
+          <div class="status">
+            <span> Нет в наличии </span>
+            <span>Код 32453</span>
+          </div>
+          <span class="price">
+            12 850 000 <span>сум/шт</span>
+          </span>
+          <div class="action">
+            <button class="action_btn_product">Уточнить наличие</button>
+            <button class="action_btn_message">
+              <img src="./images/message.svg" alt="message operator">
+            </button>
           </div>
         </div>
       </div>
-    </nav>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
